@@ -1,0 +1,9 @@
+# Import this file
+# (WLC_3-1) >show ap config general {AP Name}
+Value AP_Name (HOLMFASTVGN-AP-\w+-\w+-\w+-\w+)
+
+# Allways starts in 'Start' state.
+
+Start
+  ^Number of APs{AP_Name}
+  ^${AP_Name} -> Record
